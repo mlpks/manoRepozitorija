@@ -93,12 +93,12 @@ clean: CMakeFiles/Paskaitos.dir/clean
 CMakeFiles/Paskaitos.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Paskaitos.dir\build.make CMakeFiles/Paskaitos.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Paskaitos.dir\build.make CMakeFiles/Paskaitos.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Mindaugas\CLionProjects\Paskaitos\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Paskaitos"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Mindaugas\CLionProjects\Paskaitos\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target Paskaitos"
 .PHONY : CMakeFiles/Paskaitos.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Paskaitos.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mindaugas\CLionProjects\Paskaitos\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mindaugas\CLionProjects\Paskaitos\cmake-build-debug\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Paskaitos.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mindaugas\CLionProjects\Paskaitos\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Paskaitos.dir/rule

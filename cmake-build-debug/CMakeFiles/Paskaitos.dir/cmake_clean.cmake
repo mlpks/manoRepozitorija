@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Paskaitos.dir/dayOfTheWeek.cpp.obj"
   "CMakeFiles/Paskaitos.dir/main.cpp.obj"
+  "CMakeFiles/Paskaitos.dir/sunday.cpp.obj"
   "Paskaitos.exe"
   "Paskaitos.exe.manifest"
   "Paskaitos.pdb"

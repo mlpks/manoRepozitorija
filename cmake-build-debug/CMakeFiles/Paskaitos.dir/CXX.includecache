@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Mindaugas/CLionProjects/Paskaitos/dayOfTheWeek.h
+
 C:/Users/Mindaugas/CLionProjects/Paskaitos/main.cpp
 iostream
 -
@@ -13,4 +15,10 @@ vector
 -
 cmath
 -
+dayOfTheWeek.h
+C:/Users/Mindaugas/CLionProjects/Paskaitos/dayOfTheWeek.h
+sunday.h
+C:/Users/Mindaugas/CLionProjects/Paskaitos/sunday.h
+
+C:/Users/Mindaugas/CLionProjects/Paskaitos/sunday.h
 

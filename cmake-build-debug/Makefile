@@ -142,6 +142,33 @@ Paskaitos/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Paskaitos.dir\build.make CMakeFiles/Paskaitos.dir/build
 .PHONY : Paskaitos/fast
 
+dayOfTheWeek.obj: dayOfTheWeek.cpp.obj
+
+.PHONY : dayOfTheWeek.obj
+
+# target to build an object file
+dayOfTheWeek.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Paskaitos.dir\build.make CMakeFiles/Paskaitos.dir/dayOfTheWeek.cpp.obj
+.PHONY : dayOfTheWeek.cpp.obj
+
+dayOfTheWeek.i: dayOfTheWeek.cpp.i
+
+.PHONY : dayOfTheWeek.i
+
+# target to preprocess a source file
+dayOfTheWeek.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Paskaitos.dir\build.make CMakeFiles/Paskaitos.dir/dayOfTheWeek.cpp.i
+.PHONY : dayOfTheWeek.cpp.i
+
+dayOfTheWeek.s: dayOfTheWeek.cpp.s
+
+.PHONY : dayOfTheWeek.s
+
+# target to generate assembly for a file
+dayOfTheWeek.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Paskaitos.dir\build.make CMakeFiles/Paskaitos.dir/dayOfTheWeek.cpp.s
+.PHONY : dayOfTheWeek.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -169,6 +196,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Paskaitos.dir\build.make CMakeFiles/Paskaitos.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+sunday.obj: sunday.cpp.obj
+
+.PHONY : sunday.obj
+
+# target to build an object file
+sunday.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Paskaitos.dir\build.make CMakeFiles/Paskaitos.dir/sunday.cpp.obj
+.PHONY : sunday.cpp.obj
+
+sunday.i: sunday.cpp.i
+
+.PHONY : sunday.i
+
+# target to preprocess a source file
+sunday.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Paskaitos.dir\build.make CMakeFiles/Paskaitos.dir/sunday.cpp.i
+.PHONY : sunday.cpp.i
+
+sunday.s: sunday.cpp.s
+
+.PHONY : sunday.s
+
+# target to generate assembly for a file
+sunday.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Paskaitos.dir\build.make CMakeFiles/Paskaitos.dir/sunday.cpp.s
+.PHONY : sunday.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -178,9 +232,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Paskaitos
+	@echo ... dayOfTheWeek.obj
+	@echo ... dayOfTheWeek.i
+	@echo ... dayOfTheWeek.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... sunday.obj
+	@echo ... sunday.i
+	@echo ... sunday.s
 .PHONY : help
 
 

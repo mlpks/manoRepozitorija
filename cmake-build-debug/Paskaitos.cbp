@@ -82,7 +82,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Mindaugas/CLionProjects/Paskaitos/dayOfTheWeek.cpp">
+			<Option target="Paskaitos"/>
+		</Unit>
+		<Unit filename="C:/Users/Mindaugas/CLionProjects/Paskaitos/dayOfTheWeek.h">
+			<Option target="Paskaitos"/>
+		</Unit>
 		<Unit filename="C:/Users/Mindaugas/CLionProjects/Paskaitos/main.cpp">
+			<Option target="Paskaitos"/>
+		</Unit>
+		<Unit filename="C:/Users/Mindaugas/CLionProjects/Paskaitos/sunday.cpp">
+			<Option target="Paskaitos"/>
+		</Unit>
+		<Unit filename="C:/Users/Mindaugas/CLionProjects/Paskaitos/sunday.h">
 			<Option target="Paskaitos"/>
 		</Unit>
 		<Unit filename="C:/Users/Mindaugas/CLionProjects/Paskaitos/CMakeLists.txt">

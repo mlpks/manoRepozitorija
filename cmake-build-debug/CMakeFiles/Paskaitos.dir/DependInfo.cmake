@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/Mindaugas/CLionProjects/Paskaitos/dayOfTheWeek.cpp" "C:/Users/Mindaugas/CLionProjects/Paskaitos/cmake-build-debug/CMakeFiles/Paskaitos.dir/dayOfTheWeek.cpp.obj"
   "C:/Users/Mindaugas/CLionProjects/Paskaitos/main.cpp" "C:/Users/Mindaugas/CLionProjects/Paskaitos/cmake-build-debug/CMakeFiles/Paskaitos.dir/main.cpp.obj"
+  "C:/Users/Mindaugas/CLionProjects/Paskaitos/sunday.cpp" "C:/Users/Mindaugas/CLionProjects/Paskaitos/cmake-build-debug/CMakeFiles/Paskaitos.dir/sunday.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
