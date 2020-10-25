@@ -5,82 +5,87 @@
 #include "sunday.h"
 using namespace std;
 
-struct burger{
-    bool withMeat;
-    int slicesOfMeat;
-    int slicesOfCheese;
-    int slicesOfTomato;
-    char lettuce[10];
-    char majo[10];
-
+struct tara{
+    char tarosTipas;
+    int tarosKiekis;
+    double grazaKiekvienoTipo;
+    int bendrasTraosKiekis;
+    double grazaBendra;
 };
 
-
 int main() {
+    string ar;
+    cout << "Ar norite pradeti? (taip/ne)" << endl;
+    cin >> ar;
 
-    cout << "You are ordering at Mcdonald's, you are about to choose what type of burger you want to order."<< endl;
-    int whatToEat;
-    cout << "What type of burger do you want to order? A Beef burger (1); A Chicken burger (2); A Veggie burger (3)" << endl;
-    cin >> whatToEat;
-
-    string mealName;
-    switch(whatToEat){
-        case 1:
-            mealName = "a Beef burger";
-            cout << "You have chosen " << mealName << endl;
-            break;
-        case 2:
-            mealName = "a Chicken burger";
-            cout << "You have chosen " << mealName << endl;
-            break;
-        case 3:
-            mealName = "a Veggie burger";
-            cout << "You have chosen " << mealName << endl;
-            break;
-        default:
-            cout << "Invalid number";
-    }
-
-    string answer;
-    cout << "Do you want a meal? Yes or no." << endl;
-    cin >> answer;
-
-    if (answer == "yes"){
-
-        }
-    }else if (answer == "no"){
-        // xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    if (ar == "ne"){
+        cout << "Supratau, geros dienos." << endl;
+    }else if (ar == "taip"){
+        cout << "Pradekite mesti tara." << endl;
     }else{
-        cout << "Invalid answer" << endl;
-    }
-*/
-/*
-
-        string day[] = {1, 2, 3, 4, 5, 6, 7};
-        if (d > 0 && d < 6 ){
-            cout << "It is " << day[dayName] << "! You have to work today!" << endl;
+        while (ar != "ne" && ar !="taip"){
+            cout << "Nurodyta neteisinga informacija!" << endl;
+            cout << "Ar norite pradeti? (taip/ne)" << endl;
+            cin >> ar;
+            if (ar == "ne"){
+                cout << "Supratau, geros dienos." << endl;
+            }
+            else if(ar == "taip"){
+                cout << "Pradekite mesti tara." << endl;
+            }
         }
-        else if (d == 0 || d == 6){
-            cout << "It's a " << day[d] << ", relax." << endl;
+    }
+
+    double plastikas = 0.05;
+    double stiklas = 0.1;
+    double metalas = 0.15;
+/*
+    int tarosTipas;
+    cout << "Kokio tipo tara norite imesti (0-plastikas; 1-stiklas; 2-metalas)" << endl;
+    cin >> tarosTipas;
+*/
+    int tarosTipas;
+    string ar2;
+    int tarosMasyvas[50] = {};
+    for (int i=0; i<5; i++) {
+        cout << "Kokio tipo tara norite imesti (0-plastikas; 1-stiklas; 2-metalas)" << endl;
+        cin >> tarosTipas;
+        tarosMasyvas[i] = tarosTipas;
+        cout << "ar norite testi? (taip/ne): " << ar2 << endl;
+        while (ar2 == "taip"){
+            cout << "Imeskite sekancia tara: " << endl;
+        }
+        if (ar2 == "ne"){
+            break;
         }
         else{
-            cout << "Invalid number written." << endl;
+            while (ar2 != "ne" && ar2 != "taip") {
+                cout << "Nurodyta neteisinga informacija!" << endl;
+                cout << "Ar norite testi? (taip/ne)" << endl;
+                cin >> ar2;
+                if (ar2 == "ne") {
+                    break;
+                } else if (ar2 == "taip") {
+                    cout << "Imeskite sekancia tara: " << endl;
+                }
+            }
         }
-
-*/
-
-
+    }
+    //cout << "Jusu taros tipai yra: " << tarosMasyvas[i] << endl;
 
 
 
 
 
-
-
-
-
-//    funkcija1();
-//   listas();
 
     return 0;
 }
+
+
+
+/*
+void grazintiTarosInformacija(tara t){
+    cout << "plastiko kiekis: " <<
+
+}
+*/
