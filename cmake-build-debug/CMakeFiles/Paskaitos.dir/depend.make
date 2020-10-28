@@ -4,9 +4,7 @@
 CMakeFiles/Paskaitos.dir/dayOfTheWeek.cpp.obj: ../dayOfTheWeek.cpp
 CMakeFiles/Paskaitos.dir/dayOfTheWeek.cpp.obj: ../dayOfTheWeek.h
 
-CMakeFiles/Paskaitos.dir/main.cpp.obj: ../dayOfTheWeek.h
 CMakeFiles/Paskaitos.dir/main.cpp.obj: ../main.cpp
-CMakeFiles/Paskaitos.dir/main.cpp.obj: ../sunday.h
 
 CMakeFiles/Paskaitos.dir/sunday.cpp.obj: ../sunday.cpp
 CMakeFiles/Paskaitos.dir/sunday.cpp.obj: ../sunday.h

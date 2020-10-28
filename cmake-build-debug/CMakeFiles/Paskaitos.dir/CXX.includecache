@@ -6,19 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Mindaugas/CLionProjects/Paskaitos/dayOfTheWeek.h
-
 C:/Users/Mindaugas/CLionProjects/Paskaitos/main.cpp
 iostream
 -
-vector
+string
 -
-cmath
+iomanip
 -
-dayOfTheWeek.h
-C:/Users/Mindaugas/CLionProjects/Paskaitos/dayOfTheWeek.h
-sunday.h
-C:/Users/Mindaugas/CLionProjects/Paskaitos/sunday.h
-
-C:/Users/Mindaugas/CLionProjects/Paskaitos/sunday.h
 

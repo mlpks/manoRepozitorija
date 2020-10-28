@@ -1,91 +1,133 @@
-#include <iostream> // visada reikia prideti, kai naudojam string etc...
-#include <vector> // kai naudojas masyvus (panasiai kaip listai, kuriu c++ nera)
-#include <cmath> // matematiniams veiksmams atlikti
-#include "dayOfTheWeek.h"
-#include "sunday.h"
+#include <iostream>
+#include <map>
+
 using namespace std;
 
-struct tara{
-    char tarosTipas;
-    int tarosKiekis;
-    double grazaKiekvienoTipo;
-    int bendrasTraosKiekis;
-    double grazaBendra;
+
+class Klientas {
+private:
+    int id;
+    string vardas;
+public:
+    Klientas(int id, const string &vardas) : id(id), vardas(vardas) {}
+
+    const string &getVardas() const {
+        return vardas;
+    }
 };
 
-int main() {
-    string ar;
-    cout << "Ar norite pradeti? (taip/ne)" << endl;
-    cin >> ar;
+class Kelione {
+    string pavadinimas;
+public:
+    Kelione(const string &pavadinimas) : pavadinimas(pavadinimas) {}
 
-    if (ar == "ne"){
-        cout << "Supratau, geros dienos." << endl;
-    }else if (ar == "taip"){
-        cout << "Pradekite mesti tara." << endl;
-    }else{
-        while (ar != "ne" && ar !="taip"){
-            cout << "Nurodyta neteisinga informacija!" << endl;
-            cout << "Ar norite pradeti? (taip/ne)" << endl;
-            cin >> ar;
-            if (ar == "ne"){
-                cout << "Supratau, geros dienos." << endl;
-            }
-            else if(ar == "taip"){
-                cout << "Pradekite mesti tara." << endl;
-            }
-        }
+    const string &getPavadinimas() const {
+        return pavadinimas;
+    }
+};
+
+
+class Viesbutis {
+private:
+    map<int, Klientas> rezervuota;
+    map<int, Kelione> keliones;
+public:
+    Viesbutis() {
+        keliones.insert(pair<int, Kelione>(1, Kelione("Havajai")));
+        keliones.insert(pair<int, Kelione>(2, Kelione("Palanga")));
+
     }
 
-    double plastikas = 0.05;
-    double stiklas = 0.1;
-    double metalas = 0.15;
-/*
-    int tarosTipas;
-    cout << "Kokio tipo tara norite imesti (0-plastikas; 1-stiklas; 2-metalas)" << endl;
-    cin >> tarosTipas;
-*/
-    int tarosTipas;
-    string ar2;
-    int tarosMasyvas[50] = {};
-    for (int i=0; i<5; i++) {
-        cout << "Kokio tipo tara norite imesti (0-plastikas; 1-stiklas; 2-metalas)" << endl;
-        cin >> tarosTipas;
-        tarosMasyvas[i] = tarosTipas;
-        cout << "ar norite testi? (taip/ne): " << ar2 << endl;
-        while (ar2 == "taip"){
-            cout << "Imeskite sekancia tara: " << endl;
-        }
-        if (ar2 == "ne"){
-            break;
-        }
-        else{
-            while (ar2 != "ne" && ar2 != "taip") {
-                cout << "Nurodyta neteisinga informacija!" << endl;
-                cout << "Ar norite testi? (taip/ne)" << endl;
-                cin >> ar2;
-                if (ar2 == "ne") {
-                    break;
-                } else if (ar2 == "taip") {
-                    cout << "Imeskite sekancia tara: " << endl;
+    const map<int, Klientas> &getRezervuota() const {
+        return rezervuota;
+    }
+
+    const map<int, Kelione> &getKeliones() const {
+        return keliones;
+    }
+
+    void rezervuoti(Klientas klientas) {
+
+        int input = 1;
+
+
+        while (input != 0) {
+
+            cout << "Pasirinkite kur norite keliauti:" << endl;
+
+            int index = 1;
+
+            for (const auto &it: keliones) {
+                cout << index++ << ". " << it.second.getPavadinimas() << endl;
+            }
+
+            cout << "Iveskite skaiciu:" << endl;
+            cin >> input;
+
+            if (rezervuota.empty()) {
+                rezervuota.insert(pair<int, Klientas>(input, klientas));
+                cout << "ADDED!" << endl;
+            } else {
+                for (auto it: keliones) {
+                    if (input == it.first) {
+                        rezervuota.insert(pair<int, Klientas>(input, klientas));
+                        cout << " ADDED also!" << endl;
+
+                    }
                 }
+
             }
+            cout << "Rezervuotu kelioniu sarasas:" << endl;
+            for (auto i: rezervuota) {
+                cout << ">> " << i.first << " " << i.second.getVardas()<< ", kelione: "<< keliones.at(i.first).getPavadinimas() << " <<"<< endl;
+            }
+
+            char arNorite;
+
+            cout << "Ar norite atsaukti kelione? y/n" << endl;
+
+            int ind = 1;
+
+            cin >> arNorite;
+            if(arNorite == 'y') {
+                for (const auto &it: rezervuota) {
+                    cout << ind++ << ". " << it.second.getVardas() << " "<< keliones.at(it.first).getPavadinimas() << endl;
+                }
+                cout << "Pasirinkite is saraso numeri: " << endl;
+                cin >> input;
+                rezervuota.erase(input);
+                cout << "======================================================"<<endl;
+                cout << "=================KELIONE SEKMINGAI PASALINTA==============="<<endl;
+                cout << "======================================================"<<endl;
+                ind = 1;
+
+
+                cout << "======================================================"<<endl;
+                cout << "=================Rezervuotu kelioniu sarasas:==============="<<endl;
+                cout << "======================================================"<<endl;
+
+                for (const auto &it: rezervuota) {
+                    cout << ind++ << ". " << it.second.getVardas() << " "<< keliones.at(it.first).getPavadinimas() << endl;
+                }
+                cout << "=============================================="<< endl;
+
+            }else{
+                cout << "=============================================="<< endl;
+            }
+
         }
+
     }
-    //cout << "Jusu taros tipai yra: " << tarosMasyvas[i] << endl;
+
+};
 
 
+int main() {
 
-
+    Viesbutis viesbutis;
+    Klientas petras(12131, "Petras");
+    viesbutis.rezervuoti(petras);
 
 
     return 0;
 }
-
-
-
-/*
-void grazintiTarosInformacija(tara t){
-    cout << "plastiko kiekis: " <<
-
-}
-*/
