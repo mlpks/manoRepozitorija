@@ -1,133 +1,111 @@
 #include <iostream>
-#include <map>
+#include <string>
+#include <iomanip>
 
 using namespace std;
 
-
-class Klientas {
-private:
-    int id;
-    string vardas;
-public:
-    Klientas(int id, const string &vardas) : id(id), vardas(vardas) {}
-
-    const string &getVardas() const {
-        return vardas;
-    }
+struct taros{
+    int plastikoKiekis = 0;
+    int stikloKiekis = 0;
+    int metaloKiekis = 0;
 };
 
-class Kelione {
+struct supirkimoPunktas{
     string pavadinimas;
-public:
-    Kelione(const string &pavadinimas) : pavadinimas(pavadinimas) {}
-
-    const string &getPavadinimas() const {
-        return pavadinimas;
-    }
+    double kainos[3];
 };
 
-
-class Viesbutis {
-private:
-    map<int, Klientas> rezervuota;
-    map<int, Kelione> keliones;
-public:
-    Viesbutis() {
-        keliones.insert(pair<int, Kelione>(1, Kelione("Havajai")));
-        keliones.insert(pair<int, Kelione>(2, Kelione("Palanga")));
-
-    }
-
-    const map<int, Klientas> &getRezervuota() const {
-        return rezervuota;
-    }
-
-    const map<int, Kelione> &getKeliones() const {
-        return keliones;
-    }
-
-    void rezervuoti(Klientas klientas) {
-
-        int input = 1;
-
-
-        while (input != 0) {
-
-            cout << "Pasirinkite kur norite keliauti:" << endl;
-
-            int index = 1;
-
-            for (const auto &it: keliones) {
-                cout << index++ << ". " << it.second.getPavadinimas() << endl;
-            }
-
-            cout << "Iveskite skaiciu:" << endl;
-            cin >> input;
-
-            if (rezervuota.empty()) {
-                rezervuota.insert(pair<int, Klientas>(input, klientas));
-                cout << "ADDED!" << endl;
-            } else {
-                for (auto it: keliones) {
-                    if (input == it.first) {
-                        rezervuota.insert(pair<int, Klientas>(input, klientas));
-                        cout << " ADDED also!" << endl;
-
-                    }
-                }
-
-            }
-            cout << "Rezervuotu kelioniu sarasas:" << endl;
-            for (auto i: rezervuota) {
-                cout << ">> " << i.first << " " << i.second.getVardas()<< ", kelione: "<< keliones.at(i.first).getPavadinimas() << " <<"<< endl;
-            }
-
-            char arNorite;
-
-            cout << "Ar norite atsaukti kelione? y/n" << endl;
-
-            int ind = 1;
-
-            cin >> arNorite;
-            if(arNorite == 'y') {
-                for (const auto &it: rezervuota) {
-                    cout << ind++ << ". " << it.second.getVardas() << " "<< keliones.at(it.first).getPavadinimas() << endl;
-                }
-                cout << "Pasirinkite is saraso numeri: " << endl;
-                cin >> input;
-                rezervuota.erase(input);
-                cout << "======================================================"<<endl;
-                cout << "=================KELIONE SEKMINGAI PASALINTA==============="<<endl;
-                cout << "======================================================"<<endl;
-                ind = 1;
-
-
-                cout << "======================================================"<<endl;
-                cout << "=================Rezervuotu kelioniu sarasas:==============="<<endl;
-                cout << "======================================================"<<endl;
-
-                for (const auto &it: rezervuota) {
-                    cout << ind++ << ". " << it.second.getVardas() << " "<< keliones.at(it.first).getPavadinimas() << endl;
-                }
-                cout << "=============================================="<< endl;
-
-            }else{
-                cout << "=============================================="<< endl;
-            }
-
-        }
-
-    }
-
+struct kvitas{
+    double plastikoSuma = 0.0;
+    double stikloSuma = 0.0;
+    double metaloSuma = 0.0;
 };
 
+//funkcija kuri paskaiciuoja kaina
+double paskaiciuoti(int kiekis, double kaina){
+    return kiekis*kaina;
+}
 
 int main() {
+    supirkimoPunktas supirktuve;
+    cout << "Sveiki, prasome suvesti supirktuves pavadinima:\n";
+    cin >> supirktuve.pavadinimas;
+    cout << "Suveskite is eiles supirkimo kainas.\n";
+    string pavadinimai[3] = {"plastiko", "stiklo", "metalo"};
+    string ivestasTekstas;
+    for (int kainuSkaitliukas = 0; kainuSkaitliukas <
+                                   3;) {//patys didinsime skaitliuka cikle, todel trecia elementa paliekame tuscia, nes kartais ciklo nepadidinsime
+        cout << "Iveskite " << pavadinimai[kainuSkaitliukas] << " kaina:\n";
+        cin >> ivestasTekstas;
+        try {//bandysim atlikti veiksmus, kurie gali nuluzti
+            supirktuve.kainos[kainuSkaitliukas] = stod(ivestasTekstas);//bandom ivesta teksta paversti i kaina
+            cout << "Perskaiciau " << pavadinimai[kainuSkaitliukas] << " kaina: " << supirktuve.kainos[kainuSkaitliukas]
+                 << " Eur. [" << supirktuve.pavadinimas << "]\n";
+            kainuSkaitliukas++;
+        } catch (exception &e) {//jei kas nors nuzus - pranesim vartotojui
+            cout << "Ivedete neteisingus duomenis, prasome pakartoti\n";
+        }
+    }
+    cout << "Ar norite pradeti? (taip/ne)" << endl;
+    cin >> ivestasTekstas;
 
-    Viesbutis viesbutis;
-    Klientas petras(12131, "Petras");
-    viesbutis.rezervuoti(petras);
+    while (ivestasTekstas != "ne" && ivestasTekstas != "taip") {
+        cout << "Nurodyta neteisinga informacija!" << endl;
+        cout << "Ar norite pradeti? (taip/ne)" << endl;
+        cin >> ivestasTekstas;
+    }
 
+    if (ivestasTekstas == "ne") {
+        cout << "Supratau, geros dienos." << endl;
+        return 0;//iseinam is programos
+    } else if (ivestasTekstas == "taip") {
+        cout << "Pradekite mesti tara." << endl;
+    }
 
-    return 0;
+    taros priduodamaTara;
+    int tarosTipas;
+    bool testi = true;
+    while (testi) {
+        cout << "Kokio tipo tara norite imesti (0-plastikas; 1-stiklas; 2-metalas)" << endl;
+        cin >> tarosTipas;
+        switch (tarosTipas) {
+            case 0:
+                priduodamaTara.plastikoKiekis++;
+                break;
+            case 1:
+                priduodamaTara.stikloKiekis++;
+                break;
+            case 2:
+                priduodamaTara.metaloKiekis++;
+                break;
+        }
+
+        cout << "ar norite testi? (taip/ne): " << endl;
+        cin >> ivestasTekstas;
+        while (ivestasTekstas != "ne" && ivestasTekstas != "taip") {
+            cout << "Nurodyta neteisinga informacija!" << endl;
+            cout << "ar norite testi? (taip/ne)" << endl;
+            cin >> ivestasTekstas;
+        }
+        if (ivestasTekstas == "ne")
+            testi = false;
+    }
+
+    kvitas k;
+    k.plastikoSuma = paskaiciuoti(priduodamaTara.plastikoKiekis, supirktuve.kainos[0]);
+    k.stikloSuma = paskaiciuoti(priduodamaTara.stikloKiekis, supirktuve.kainos[1]);
+    k.metaloSuma = paskaiciuoti(priduodamaTara.metaloKiekis, supirktuve.kainos[2]);
+
+    cout << "Spausdinamas cekis:\n";
+    cout << "=======================" << endl;
+    cout << supirktuve.pavadinimas << endl;
+    cout << "=======================" << endl;
+    cout << "Plastiko kiekis:" << priduodamaTara.plastikoKiekis << ". Suma: " << k.plastikoSuma << endl;
+    cout << "Stiklo kiekis:" << priduodamaTara.stikloKiekis << ". Suma: " << k.stikloSuma << endl;
+    cout << "Metalo kiekis:" << priduodamaTara.metaloKiekis << ". Suma: " << k.metaloSuma << endl;
+    cout << "=======================" << endl;
+    cout << "Viso galutine suma: " << k.plastikoSuma + k.stikloSuma + k.metaloSuma << endl;
+    cout << "=======================" << endl;
+
+    cout << "Pabaiga" << endl;
 }
