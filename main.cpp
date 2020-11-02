@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <iomanip>
 
 using namespace std;
 
@@ -31,21 +30,21 @@ int main() {
     cout << "Sveiki, prasome suvesti supirktuves pavadinima:\n";
     cin >> supirktuve.pavadinimas;
     cout << "Suveskite is eiles supirkimo kainas.\n";
+
     string pavadinimai[3] = {"plastiko", "stiklo", "metalo"};
-    string ivestasTekstas;
-    for (int kainuSkaitliukas = 0; kainuSkaitliukas <
-                                   3;) {//patys didinsime skaitliuka cikle, todel trecia elementa paliekame tuscia, nes kartais ciklo nepadidinsime
+    double ivestaKaina;
+    for (int kainuSkaitliukas = 0; kainuSkaitliukas < 3;) {//patys didinsime skaitliuka cikle, todel trecia elementa paliekame tuscia, nes kartais ciklo nepadidinsime
         cout << "Iveskite " << pavadinimai[kainuSkaitliukas] << " kaina:\n";
-        cin >> ivestasTekstas;
+        cin >> ivestaKaina;
         try {//bandysim atlikti veiksmus, kurie gali nuluzti
-            supirktuve.kainos[kainuSkaitliukas] = stod(ivestasTekstas);//bandom ivesta teksta paversti i kaina
-            cout << "Perskaiciau " << pavadinimai[kainuSkaitliukas] << " kaina: " << supirktuve.kainos[kainuSkaitliukas]
-                 << " Eur. [" << supirktuve.pavadinimas << "]\n";
+            supirktuve.kainos[kainuSkaitliukas] = ivestaKaina;
+            cout << "Perskaiciau " << pavadinimai[kainuSkaitliukas] << " kaina: " << supirktuve.kainos[kainuSkaitliukas] << " Eur. [" << supirktuve.pavadinimas << "]\n";
             kainuSkaitliukas++;
-        } catch (exception &e) {//jei kas nors nuzus - pranesim vartotojui
+        } catch (exception &e) { // CIA NEAISKU SINTAKSE: exception &e
             cout << "Ivedete neteisingus duomenis, prasome pakartoti\n";
         }
     }
+    string ivestasTekstas;
     cout << "Ar norite pradeti? (taip/ne)" << endl;
     cin >> ivestasTekstas;
 
@@ -57,7 +56,8 @@ int main() {
 
     if (ivestasTekstas == "ne") {
         cout << "Supratau, geros dienos." << endl;
-        return 0;//iseinam is programos
+        return 0; //iseinam is programos
+
     } else if (ivestasTekstas == "taip") {
         cout << "Pradekite mesti tara." << endl;
     }
@@ -78,6 +78,8 @@ int main() {
             case 2:
                 priduodamaTara.metaloKiekis++;
                 break;
+            default:
+                cout << "Tokios taros nera." << endl;
         }
 
         cout << "ar norite testi? (taip/ne): " << endl;
@@ -108,4 +110,6 @@ int main() {
     cout << "=======================" << endl;
 
     cout << "Pabaiga" << endl;
+
+    return 0;
 }
