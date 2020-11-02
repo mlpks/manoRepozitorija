@@ -3,25 +3,24 @@
 
 using namespace std;
 
-struct taros{
+struct taros {
     int plastikoKiekis = 0;
     int stikloKiekis = 0;
     int metaloKiekis = 0;
 };
 
-struct supirkimoPunktas{
+struct supirkimoPunktas {
     string pavadinimas;
     double kainos[3];
 };
 
-struct kvitas{
+struct kvitas {
     double plastikoSuma = 0.0;
     double stikloSuma = 0.0;
     double metaloSuma = 0.0;
 };
 
-//funkcija kuri paskaiciuoja kaina
-double paskaiciuoti(int kiekis, double kaina){
+double paskaiciuoti(int kiekis, double kaina) {
     return kiekis*kaina;
 }
 
@@ -33,14 +32,15 @@ int main() {
 
     string pavadinimai[3] = {"plastiko", "stiklo", "metalo"};
     double ivestaKaina;
-    for (int kainuSkaitliukas = 0; kainuSkaitliukas < 3;) {//patys didinsime skaitliuka cikle, todel trecia elementa paliekame tuscia, nes kartais ciklo nepadidinsime
+    for (int kainuSkaitliukas = 0; kainuSkaitliukas < 3;) {
         cout << "Iveskite " << pavadinimai[kainuSkaitliukas] << " kaina:\n";
         cin >> ivestaKaina;
-        try {//bandysim atlikti veiksmus, kurie gali nuluzti
+        try {
             supirktuve.kainos[kainuSkaitliukas] = ivestaKaina;
-            cout << "Perskaiciau " << pavadinimai[kainuSkaitliukas] << " kaina: " << supirktuve.kainos[kainuSkaitliukas] << " Eur. [" << supirktuve.pavadinimas << "]\n";
+            cout << "Perskaiciau " << pavadinimai[kainuSkaitliukas] << " kaina: " << supirktuve.kainos[kainuSkaitliukas]
+            << " Eur. [" << supirktuve.pavadinimas << "]\n";
             kainuSkaitliukas++;
-        } catch (exception &e) { // CIA NEAISKU SINTAKSE: exception &e
+        } catch (exception &e) {
             cout << "Ivedete neteisingus duomenis, prasome pakartoti\n";
         }
     }
@@ -56,7 +56,7 @@ int main() {
 
     if (ivestasTekstas == "ne") {
         cout << "Supratau, geros dienos." << endl;
-        return 0; //iseinam is programos
+        return 0;
 
     } else if (ivestasTekstas == "taip") {
         cout << "Pradekite mesti tara." << endl;
