@@ -1,5 +1,4 @@
-# manoRepozitorija
-
+# Pseudokodas
 Struktūrinis programavimas: 1 Užduotis.
 
 Vardas, pavardė, grupė: Mindaugas Lupeikis, PI20S.
