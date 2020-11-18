@@ -1,0 +1,185 @@
+<mxfile host="app.diagrams.net" modified="2020-11-05T18:03:36.472Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36" etag="irUaLxyg7xXIzVWvhPo-" version="13.8.5" type="github">
+  <diagram id="fazthVKuf5N_HojPK5vW" name="Page-1">
+    <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="R0zKC4dGQp5_9odEUZtZ-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="uOnMbKbK_IOF8YjCesz3-1" target="R0zKC4dGQp5_9odEUZtZ-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOnMbKbK_IOF8YjCesz3-1" value="Įveskite (taros) kainą" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="299" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R0zKC4dGQp5_9odEUZtZ-1" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="359" y="120" as="sourcePoint" />
+            <mxPoint x="359" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R0zKC4dGQp5_9odEUZtZ-2" value="Plastiko kaina" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="299" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R0zKC4dGQp5_9odEUZtZ-3" value="Stiklo kaina" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="299" y="240" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R0zKC4dGQp5_9odEUZtZ-7" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="358.5" y="280" as="sourcePoint" />
+            <mxPoint x="359" y="320" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R0zKC4dGQp5_9odEUZtZ-8" value="Metalo kaina" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="299" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R0zKC4dGQp5_9odEUZtZ-9" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="419" y="179.5" as="sourcePoint" />
+            <mxPoint x="459" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="439" y="179.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R0zKC4dGQp5_9odEUZtZ-10" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="419" y="259.5" as="sourcePoint" />
+            <mxPoint x="459" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="439" y="259.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R0zKC4dGQp5_9odEUZtZ-11" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="419" y="339.5" as="sourcePoint" />
+            <mxPoint x="459" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="439" y="339.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R0zKC4dGQp5_9odEUZtZ-12" value="Įvedėte neteisingus duomenis, prašome pakartoti" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="459" y="160" width="70" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="R0zKC4dGQp5_9odEUZtZ-13" value="" style="endArrow=classic;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="R0zKC4dGQp5_9odEUZtZ-12" target="uOnMbKbK_IOF8YjCesz3-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="489" y="160" as="sourcePoint" />
+            <mxPoint x="539" y="110" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="494" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-3" value="NE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="289" y="460" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-5" value="Supratau, geros dienos." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="470" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-6" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="319" y="479.5" as="sourcePoint" />
+            <mxPoint x="279" y="479.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-8" value="Ar norite pradėti?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="319" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-10" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="480" as="sourcePoint" />
+            <mxPoint x="530" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-11" value="neteisingas tekstas" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="399" y="460" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-12" value="Įvedėte neteisingus duomenis, prašome pakartoti" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="529" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-13" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="t7ObTTxFkAW9ewbXoG14-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="588.5" y="450" as="sourcePoint" />
+            <mxPoint x="360" y="410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="589" y="410" />
+              <mxPoint x="359" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-14" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="358.5" y="520" as="sourcePoint" />
+            <mxPoint x="359" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-15" value="TAIP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="319" y="530" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-16" value="Pradėkite mesti tarą" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="299" y="560" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-18" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="359" y="600" as="sourcePoint" />
+            <mxPoint x="359" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-19" value="Kokio tipo tara?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="319" y="640" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-21" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="t7ObTTxFkAW9ewbXoG14-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="359" y="770" as="sourcePoint" />
+            <mxPoint x="359" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-22" value="0 || 1 || 2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="299" y="730" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-23" value="Ar norite tęsti?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="299" y="760" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-24" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="t7ObTTxFkAW9ewbXoG14-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="299" y="779.5" as="sourcePoint" />
+            <mxPoint x="259" y="680" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="259" y="780" />
+              <mxPoint x="259" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-25" value="TAIP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="720" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-26" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="359" y="800" as="sourcePoint" />
+            <mxPoint x="359" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-27" value="NE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="359" y="810" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-28" value="Spausdinamas čekis" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="850" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-29" value="neteisingas tekstas" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="519" y="720" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t7ObTTxFkAW9ewbXoG14-30" value="" style="endArrow=classic;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="t7ObTTxFkAW9ewbXoG14-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="399" y="680" as="sourcePoint" />
+            <mxPoint x="450" y="790" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="520" y="680" />
+              <mxPoint x="520" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
