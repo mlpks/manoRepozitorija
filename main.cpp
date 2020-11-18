@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 
+
+
 using namespace std;
 
 struct taros {
@@ -38,7 +40,7 @@ int main() {
         try {
             supirktuve.kainos[kainuSkaitliukas] = ivestaKaina;
             cout << "Perskaiciau " << pavadinimai[kainuSkaitliukas] << " kaina: " << supirktuve.kainos[kainuSkaitliukas]
-            << " Eur. [" << supirktuve.pavadinimas << "]\n";
+                 << " Eur. [" << supirktuve.pavadinimas << "]\n";
             kainuSkaitliukas++;
         } catch (exception &e) {
             cout << "Ivedete neteisingus duomenis, prasome pakartoti\n";
