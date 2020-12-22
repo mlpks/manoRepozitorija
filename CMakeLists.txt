@@ -3,4 +3,4 @@ project(Paskaitos)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Paskaitos main.cpp dayOfTheWeek.cpp dayOfTheWeek.h sunday.cpp sunday.h)
+add_executable(Paskaitos main.cpp)
