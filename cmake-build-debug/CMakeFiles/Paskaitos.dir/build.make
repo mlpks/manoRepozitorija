@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Mindaugas\CLionProjects\Paskaitos
+CMAKE_SOURCE_DIR = C:\Users\Mindaugas\CLionProjects\manoRepozitorija
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Mindaugas\CLionProjects\Paskaitos\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Mindaugas\CLionProjects\manoRepozitorija\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Paskaitos.dir/depend.make
@@ -78,42 +78,42 @@ include CMakeFiles/Paskaitos.dir/flags.make
 
 CMakeFiles/Paskaitos.dir/main.cpp.obj: CMakeFiles/Paskaitos.dir/flags.make
 CMakeFiles/Paskaitos.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mindaugas\CLionProjects\Paskaitos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Paskaitos.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Paskaitos.dir\main.cpp.obj -c C:\Users\Mindaugas\CLionProjects\Paskaitos\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mindaugas\CLionProjects\manoRepozitorija\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Paskaitos.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Paskaitos.dir\main.cpp.obj -c C:\Users\Mindaugas\CLionProjects\manoRepozitorija\main.cpp
 
 CMakeFiles/Paskaitos.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Paskaitos.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mindaugas\CLionProjects\Paskaitos\main.cpp > CMakeFiles\Paskaitos.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mindaugas\CLionProjects\manoRepozitorija\main.cpp > CMakeFiles\Paskaitos.dir\main.cpp.i
 
 CMakeFiles/Paskaitos.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Paskaitos.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mindaugas\CLionProjects\Paskaitos\main.cpp -o CMakeFiles\Paskaitos.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mindaugas\CLionProjects\manoRepozitorija\main.cpp -o CMakeFiles\Paskaitos.dir\main.cpp.s
 
 CMakeFiles/Paskaitos.dir/dayOfTheWeek.cpp.obj: CMakeFiles/Paskaitos.dir/flags.make
 CMakeFiles/Paskaitos.dir/dayOfTheWeek.cpp.obj: ../dayOfTheWeek.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mindaugas\CLionProjects\Paskaitos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Paskaitos.dir/dayOfTheWeek.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Paskaitos.dir\dayOfTheWeek.cpp.obj -c C:\Users\Mindaugas\CLionProjects\Paskaitos\dayOfTheWeek.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mindaugas\CLionProjects\manoRepozitorija\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Paskaitos.dir/dayOfTheWeek.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Paskaitos.dir\dayOfTheWeek.cpp.obj -c C:\Users\Mindaugas\CLionProjects\manoRepozitorija\dayOfTheWeek.cpp
 
 CMakeFiles/Paskaitos.dir/dayOfTheWeek.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Paskaitos.dir/dayOfTheWeek.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mindaugas\CLionProjects\Paskaitos\dayOfTheWeek.cpp > CMakeFiles\Paskaitos.dir\dayOfTheWeek.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mindaugas\CLionProjects\manoRepozitorija\dayOfTheWeek.cpp > CMakeFiles\Paskaitos.dir\dayOfTheWeek.cpp.i
 
 CMakeFiles/Paskaitos.dir/dayOfTheWeek.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Paskaitos.dir/dayOfTheWeek.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mindaugas\CLionProjects\Paskaitos\dayOfTheWeek.cpp -o CMakeFiles\Paskaitos.dir\dayOfTheWeek.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mindaugas\CLionProjects\manoRepozitorija\dayOfTheWeek.cpp -o CMakeFiles\Paskaitos.dir\dayOfTheWeek.cpp.s
 
 CMakeFiles/Paskaitos.dir/sunday.cpp.obj: CMakeFiles/Paskaitos.dir/flags.make
 CMakeFiles/Paskaitos.dir/sunday.cpp.obj: ../sunday.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mindaugas\CLionProjects\Paskaitos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Paskaitos.dir/sunday.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Paskaitos.dir\sunday.cpp.obj -c C:\Users\Mindaugas\CLionProjects\Paskaitos\sunday.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mindaugas\CLionProjects\manoRepozitorija\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Paskaitos.dir/sunday.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Paskaitos.dir\sunday.cpp.obj -c C:\Users\Mindaugas\CLionProjects\manoRepozitorija\sunday.cpp
 
 CMakeFiles/Paskaitos.dir/sunday.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Paskaitos.dir/sunday.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mindaugas\CLionProjects\Paskaitos\sunday.cpp > CMakeFiles\Paskaitos.dir\sunday.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mindaugas\CLionProjects\manoRepozitorija\sunday.cpp > CMakeFiles\Paskaitos.dir\sunday.cpp.i
 
 CMakeFiles/Paskaitos.dir/sunday.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Paskaitos.dir/sunday.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mindaugas\CLionProjects\Paskaitos\sunday.cpp -o CMakeFiles\Paskaitos.dir\sunday.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mindaugas\CLionProjects\manoRepozitorija\sunday.cpp -o CMakeFiles\Paskaitos.dir\sunday.cpp.s
 
 # Object files for target Paskaitos
 Paskaitos_OBJECTS = \
@@ -131,7 +131,7 @@ Paskaitos.exe: CMakeFiles/Paskaitos.dir/build.make
 Paskaitos.exe: CMakeFiles/Paskaitos.dir/linklibs.rsp
 Paskaitos.exe: CMakeFiles/Paskaitos.dir/objects1.rsp
 Paskaitos.exe: CMakeFiles/Paskaitos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Mindaugas\CLionProjects\Paskaitos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Paskaitos.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Mindaugas\CLionProjects\manoRepozitorija\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Paskaitos.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Paskaitos.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -144,6 +144,6 @@ CMakeFiles/Paskaitos.dir/clean:
 .PHONY : CMakeFiles/Paskaitos.dir/clean
 
 CMakeFiles/Paskaitos.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Mindaugas\CLionProjects\Paskaitos C:\Users\Mindaugas\CLionProjects\Paskaitos C:\Users\Mindaugas\CLionProjects\Paskaitos\cmake-build-debug C:\Users\Mindaugas\CLionProjects\Paskaitos\cmake-build-debug C:\Users\Mindaugas\CLionProjects\Paskaitos\cmake-build-debug\CMakeFiles\Paskaitos.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Mindaugas\CLionProjects\manoRepozitorija C:\Users\Mindaugas\CLionProjects\manoRepozitorija C:\Users\Mindaugas\CLionProjects\manoRepozitorija\cmake-build-debug C:\Users\Mindaugas\CLionProjects\manoRepozitorija\cmake-build-debug C:\Users\Mindaugas\CLionProjects\manoRepozitorija\cmake-build-debug\CMakeFiles\Paskaitos.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Paskaitos.dir/depend
 
