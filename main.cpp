@@ -4,8 +4,7 @@
 
 class Klientas{
 public:
-    std::string vardas, pavarde;
-    std::string gatve;
+    std::string vardas, pavarde, gatve;
     std::string namoNr{};
     int telNr{};
 };
@@ -18,11 +17,7 @@ public:
     double kainaDiavola = 9.00;
     double kainaQuattroFormagi = 7.50;
     double kainaNordica = 10.00;
-    int kiekisMargherita = 0;
-    int kiekisParma = 0;
-    int kiekisDiavola = 0;
-    int kiekisQuattroFormagi =0;
-    int kiekisNordica = 0;
+    int kiekisMargherita{}, kiekisParma{}, kiekisDiavola{}, kiekisQuattroFormagi{}, kiekisNordica = 0;
 };
 class Kvitas{
 public:
@@ -56,13 +51,13 @@ void Menu(){
     std::cout << "Pasirinkti:";
 }
 int main(){
-    Klientas v, p, a, nNr, tl;
+    Klientas v, nNr, tl;
     std::cout << "Sveiki, prisijunge prie mobiliosios programeles! Prasome ivesti kliento duomenis.\n" << std::endl;
     std::cout << "Vardas, Pavarde:";
     std::cin >> v.vardas;
-    std::cin >> p.pavarde;
+    std::cin >> v.pavarde;
     std::cout << "Gatves pavadinimas:";
-    std::cin >> a.gatve;
+    std::cin >> v.gatve;
     std::cout << "Namo-Buto numeris:";
     std::cin >> nNr.namoNr;
     std::cout << "Telefono numeris:";
@@ -103,17 +98,17 @@ int main(){
                 return 0;
             default: // veikia tik paspaudus int tipo klavisa. Kaip isvengti infinity loop paspaudus kito tipo klavisa?
                 std::cout << "Tokio pasirinkimo nera, kartokite atsakyma!" << std::endl;
-                std::cout << "Ar norite testi?";
+                std::cout << "Ar norite testi? (t/n)";
                 std::cin >> taipne;
                 break;
         }
         BendraSumaLaikas(pasirinkimas, q, l, k);
         UzsakymoKrepselis(pasirinkimas, k, pavadinimai);
-        std::cout << "Ar norite testi?";
+        std::cout << "Ar norite testi? (t/n)";
         std::cin >> taipne;
         while (taipne != 'n' && taipne != 't'){
             std::cout << "Tokio pasirinkimo nera, kartokite atsakyma!" << std::endl;
-            std::cout << "Ar norite testi?";
+            std::cout << "Ar norite testi? (t/n)";
             std::cin >> taipne;
         }
         if (taipne == 'n'){
@@ -123,7 +118,7 @@ int main(){
     std::cout << "============================================" << std::endl;
     UzsakymoKrepselis(pasirinkimas, k, pavadinimai);
     std::cout << "============================================\n" << "Bendra suma: " << k.sumaBendra << " eu\n"
-              << "Atsiemimo laikas: " << l.laikas << " min\n" << "Atsiimti: " << v.vardas << " " << p.pavarde[0]
+              << "Atsiemimo laikas: " << l.laikas << " min\n" << "Atsiimti: " << v.vardas << " " << v.pavarde[0]
               << "." << std::endl;
     return 0;
 }
