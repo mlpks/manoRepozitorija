@@ -1,4 +1,5 @@
 #Pseudokodas
+
 Programos tikslas: 
 Picos užsakymas mobiliąja programėle pagal kliento poreikius.
 Turime picų sarašą, pagal pasirinktą kodą [0-5] galime išsirinkti norimą picą;
